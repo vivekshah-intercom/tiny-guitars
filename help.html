@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Guitars - Help</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-toggle:checked ~ .accordion-content {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+        }
+        .accordion-toggle:checked ~ .accordion-header .arrow {
+            transform: rotate(180deg);
+        }
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-bold">Tiny Guitars</h1>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-blue-200">Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-200">About</a></li>
+                    <li><a href="help.html" class="hover:text-blue-200 font-semibold">Help</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-200">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="bg-gradient-to-r from-green-500 to-teal-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Help & FAQs</h2>
+            <p class="text-xl">Everything You Need to Know About Tiny Guitars</p>
+        </div>
+    </div>
+
+    <!-- Accordion Section -->
+    <div class="container mx-auto px-4 py-16">
+        <div class="max-w-3xl mx-auto">
+            <h3 class="text-2xl font-bold mb-8 text-center text-gray-800">Frequently Asked Questions</h3>
+
+            <!-- Question 1: Why Tiny Guitars? -->
+            <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                <input type="checkbox" id="q1" class="accordion-toggle hidden">
+                <label for="q1" class="accordion-header cursor-pointer flex justify-between items-center p-6 hover:bg-gray-50">
+                    <span class="text-lg font-semibold text-gray-800">Why Tiny Guitars?</span>
+                    <svg class="arrow w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </label>
+                <div class="accordion-content bg-gray-50">
+                    <div class="p-6 pt-0">
+                        <p class="text-gray-700">
+                            Tiny guitars offer a unique combination of musical artistry and collectible charm. They're perfect for music lovers with limited space, collectors who appreciate fine craftsmanship, and anyone who finds joy in miniature versions of beloved instruments. They also make fantastic gifts, desk decorations, and conversation starters. Despite their small size, many tiny guitars are actually playable, offering a genuine musical experience in a compact form.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2: Cost of Tiny Guitars -->
+            <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                <input type="checkbox" id="q2" class="accordion-toggle hidden">
+                <label for="q2" class="accordion-header cursor-pointer flex justify-between items-center p-6 hover:bg-gray-50">
+                    <span class="text-lg font-semibold text-gray-800">How Much Do Tiny Guitars Cost?</span>
+                    <svg class="arrow w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </label>
+                <div class="accordion-content bg-gray-50">
+                    <div class="p-6 pt-0">
+                        <p class="text-gray-700 mb-3">
+                            Our tiny guitars range in price depending on size, materials, and craftsmanship level:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                            <li><strong>Basic Models:</strong> £25-£45 - Simple designs, perfect for beginners</li>
+                            <li><strong>Standard Models:</strong> £50-£85 - Quality craftsmanship with nice details</li>
+                            <li><strong>Premium Models:</strong> £90-£150 - Handcrafted with exotic woods and playable</li>
+                            <li><strong>Custom Models:</strong> £175-£300+ - Bespoke designs made to order</li>
+                        </ul>
+                        <p class="text-gray-700 mt-3">
+                            All prices include a display stand and protective case.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3: Materials -->
+            <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                <input type="checkbox" id="q3" class="accordion-toggle hidden">
+                <label for="q3" class="accordion-header cursor-pointer flex justify-between items-center p-6 hover:bg-gray-50">
+                    <span class="text-lg font-semibold text-gray-800">What Materials Are Tiny Guitars Made From?</span>
+                    <svg class="arrow w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </label>
+                <div class="accordion-content bg-gray-50">
+                    <div class="p-6 pt-0">
+                        <p class="text-gray-700 mb-3">
+                            We use a variety of high-quality materials to ensure authenticity and durability:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                            <li><strong>Woods:</strong> Spruce, mahogany, rosewood, maple, and exotic woods like koa and ebony</li>
+                            <li><strong>Strings:</strong> Nylon or steel strings (depending on model), properly scaled for miniature size</li>
+                            <li><strong>Hardware:</strong> Brass or chrome tuning pegs, metal frets, and authentic bridge components</li>
+                            <li><strong>Finishes:</strong> Natural lacquer, gloss, or matte finishes to protect and enhance the wood</li>
+                            <li><strong>Inlays:</strong> Mother-of-pearl, abalone, or synthetic alternatives for fretboard markers</li>
+                        </ul>
+                        <p class="text-gray-700 mt-3">
+                            All materials are ethically sourced and sustainably harvested where possible. We prioritize quality and environmental responsibility in every piece we create.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4: Are They Playable? -->
+            <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                <input type="checkbox" id="q4" class="accordion-toggle hidden">
+                <label for="q4" class="accordion-header cursor-pointer flex justify-between items-center p-6 hover:bg-gray-50">
+                    <span class="text-lg font-semibold text-gray-800">Are Tiny Guitars Actually Playable?</span>
+                    <svg class="arrow w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </label>
+                <div class="accordion-content bg-gray-50">
+                    <div class="p-6 pt-0">
+                        <p class="text-gray-700">
+                            Yes! Our Standard and Premium models are fully playable instruments. They can be tuned, strummed, and produce real musical notes. While they require delicate handling due to their size, they're genuine instruments that musicians enjoy playing. Basic models are primarily decorative but still feature movable parts. Many customers use them for practice, recording unique sounds, or simply enjoying the novelty of playing a miniature instrument.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5: How to Care -->
+            <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                <input type="checkbox" id="q5" class="accordion-toggle hidden">
+                <label for="q5" class="accordion-header cursor-pointer flex justify-between items-center p-6 hover:bg-gray-50">
+                    <span class="text-lg font-semibold text-gray-800">How Do I Care for My Tiny Guitar?</span>
+                    <svg class="arrow w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </label>
+                <div class="accordion-content bg-gray-50">
+                    <div class="p-6 pt-0">
+                        <p class="text-gray-700 mb-3">
+                            Proper care ensures your tiny guitar lasts for years:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                            <li>Keep away from direct sunlight and extreme temperatures</li>
+                            <li>Store in the provided case when not on display</li>
+                            <li>Dust gently with a soft, dry cloth</li>
+                            <li>If playable, check string tension periodically and retune as needed</li>
+                            <li>Avoid exposing to moisture or humid environments</li>
+                            <li>Handle with clean, dry hands to prevent oils from damaging the finish</li>
+                        </ul>
+                        <p class="text-gray-700 mt-3">
+                            With proper care, your tiny guitar will remain a cherished piece for generations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6: Shipping and Returns -->
+            <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                <input type="checkbox" id="q6" class="accordion-toggle hidden">
+                <label for="q6" class="accordion-header cursor-pointer flex justify-between items-center p-6 hover:bg-gray-50">
+                    <span class="text-lg font-semibold text-gray-800">Do You Ship? What's Your Return Policy?</span>
+                    <svg class="arrow w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </label>
+                <div class="accordion-content bg-gray-50">
+                    <div class="p-6 pt-0">
+                        <p class="text-gray-700 mb-3">
+                            We ship worldwide! Each tiny guitar is carefully packaged in protective materials to ensure safe delivery. Shipping details:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                            <li>UK: 2-3 business days (£5.99)</li>
+                            <li>Europe: 5-7 business days (£12.99)</li>
+                            <li>Worldwide: 7-14 business days (£19.99)</li>
+                        </ul>
+                        <p class="text-gray-700 mt-3">
+                            We offer a 30-day return policy. If you're not satisfied with your tiny guitar, return it in original condition for a full refund (excluding shipping costs).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Tiny Guitars. All rights reserved.</p>
+            <p class="mt-2 text-gray-400">The world's smallest guitars with the biggest charm.</p>
+        </div>
+    </footer>
+</body>
+</html>
